@@ -18,7 +18,7 @@ export const fisherWork = (userData, userNumber) => {
         for(let i = 0; i <= randomAmountFish; i++){
 		    const randomFish = Math.floor(Math.random() * fishes.length)
             const fish = inventory.find(element => element.name == fishes[randomFish].name)
-            myFish += `, ${fishes[randomFish].name}`
+            myFish += `, *${fishes[randomFish].name}*`
                 
             if(fish) fish.quantity++
             else inventory.push({ "name": fishes[randomFish].name, "quantity": 1})
@@ -29,6 +29,6 @@ export const fisherWork = (userData, userNumber) => {
 		return `◈━━━━━━━━━━━━━━━◈\n                   🎣「𝐩𝐞𝐬𝐜𝐚」🎣\n\npesca realizada com sucesso! você obteve${myFish} e sua vara está em ${randomDurability}%\nconsulte seus peixes no _/inventario_ e os venda na peixaria com _/venderpeixes_\n\n◈━━━━━━━━━━━━━━━◈`.replace(",", "");
 		    
 	}else{
-		return "*você não possui uma vara de pesca ou a sua está quebrada! você pode comprar uma na peixaria utilizando _/vara*";
+		return "*você não possui uma vara de pesca ou a sua está quebrada! você pode comprar uma na peixaria utilizando _/vara_*";
 	}
 }

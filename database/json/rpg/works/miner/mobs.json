@@ -1,0 +1,17 @@
+[
+  {"name": "goblin", "strength": 20},
+  {"name": "esqueleto", "strength": 25},
+  {"name": "gosma verde", "strength": 10},
+  {"name": "gosma azul", "strength": 15},
+  {"name": "gosma vermelha", "strength": 30},
+  {"name": "gosma preta", "strength": 50},
+  {"name": "mega pulga", "strength": 40},
+  {"name": "caranguejo rocha", "strength": 20},
+  {"name": "gnomo", "strength": 25},
+  {"name": "anao", "strength": 28},
+  {"name": "morto-vivo", "strength": 20},
+  {"name": "filhote de urso", "strength": 45},
+  {"name": "larva", "strength": 20},
+  {"name": "larva mutante", "strength": 40},
+  {"name": "mosquito venenoso", "strength": 20}
+]

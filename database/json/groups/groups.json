@@ -1,0 +1,34 @@
+[
+  {
+    "id": "120363183613498873@g.us",
+    "data": {
+      "nsfw": true,
+      "rpg": true,
+      "antilink": false
+    }
+  },
+  {
+    "id": "120363159399556827@g.us",
+    "data": {
+      "nsfw": false,
+      "rpg": false,
+      "antilink": false
+    }
+  },
+  {
+    "id": "120363203946217032@g.us",
+    "data": {
+      "nsfw": true,
+      "rpg": true,
+      "antilink": false
+    }
+  },
+  {
+    "id": "120363203584611020@g.us",
+    "data": {
+      "nsfw": false,
+      "rpg": true,
+      "antilink": false
+    }
+  }
+]

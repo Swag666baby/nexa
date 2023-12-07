@@ -1,0 +1,32 @@
+[
+  {
+      "name": "mago",
+      "primary_weapon": "cajado arcano lv.1",
+      "secondary_weapon": "bastão celeste lv.1"
+  },
+  {
+      "name": "arqueiro",
+      "primary_weapon": "arco de aurora.1",
+      "secondary_weapon": "adaga cerimonial lv.1"
+  },
+  {
+      "name": "berserker",
+      "primary_weapon": "maça pesada lv.1",
+      "secondary_weapon": "machado de batalha lv.1"
+  },
+  {
+      "name": "necromante ",
+      "primary_weapon": "espada sombria lv.1",
+      "secondary_weapon": "adaga profana lv.1"
+  },
+  {
+      "name": "ladino",
+      "primary_weapon": "foice da noite profunda lv.1",
+      "secondary_weapon": "lâmina da sombra eterna lv.1"
+  },
+  {
+      "name": "templario",
+      "primary_weapon": "machado divino lv.1",
+      "secondary_weapon": "martelo de guerra lv.1"
+  }
+]

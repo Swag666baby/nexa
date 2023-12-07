@@ -30,8 +30,6 @@ node dist/index
 
 *uma openai key convencional não funcionará.  pegue uma nesse [repositório](https://github.com/chatanywhere/GPT_API_free)*
 
-*rodar o banco de dados. use [rpg-crud](https://github.com/Swag666baby/rpg-crud) e o atualize no `.env`. recomendo hospedar ele na [render](https://render.com)*
-
 # comandos
 ## grupos
 | Descrição | Exemplo | 

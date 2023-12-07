@@ -4,7 +4,7 @@ export const repairPickaxe = (userData, userNumber) => {
 	
     if(userData.coins >= 4000){
     	modifyUserData({"id": userNumber, "character":{ "inventory":{ "tools":{ "pickaxe":{ "durability": 100 }}}}})
-		modifyUserData({"id": userNumber, "coins": userData.coins - 5000})
+		modifyUserData({"id": userNumber, "coins": userData.coins - 4000})
 	    
 	    return "picareta reparada com sucesso! foi cobrados 4,000 coins pelo conserto."
 	}else{

@@ -36,7 +36,6 @@ export const menu = (userName) => {
  [🎲] ➭ *${prefix}roleta* (valor)
  [🎲] ➭ *${prefix}agiotar* (valor)
  [🎲] ➭ *${prefix}roletarussa* 
- [🎲] ➭ *${prefix}doar* (valor)
  [🎲] ➭ *${prefix}loteria* (n1) (n2) 
  [🎲] ➭ *${prefix}dc* dica
  [🎲] ➭ *${prefix}bingo* (n1) 
@@ -181,7 +180,6 @@ export const menu = (userName) => {
 
  [🔎] ➭ *${prefix}imgsearch* (assunto)
  [🔎] ➭ *${prefix}play* (musica) 
- [🔎] ➭ *${prefix}nexaimg* (assunto) [off]
  [🔎] ➭ *${prefix}tiktok* (url)
  [🔎] ➭ *${prefix}tiktokmp3* (url)
 
@@ -212,7 +210,7 @@ export const menu = (userName) => {
 ◈━━━━━━━━━━━━━━━◈
                  📌 「𝐢𝐧𝐟𝐨𝐬」📌
 
- [📌] ➭  versão: 1.5.0
+ [📌] ➭  versão: 1.0.0
  [📌] ➭  comandos: ${allCommands.length}
  [📌] ➭  github: github.com/Swag666baby
  [📌] ➭  dev: +1 (323) 435-8049

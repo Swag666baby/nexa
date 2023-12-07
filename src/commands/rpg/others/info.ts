@@ -1,9 +1,7 @@
 export const userInfo = (userData) => {
 	try{
-        const spouse = userData.spouse.name !== " " ? ` [🩷] ➭ *nome*: ${userData.spouse.name}\n [🩷] ➭ *id*: ${userData.spouse.id}\n [🩷] ➭ *data*: ${userData.spouse.date}` : " [🩷] ➭ você não possui um cônjuge!💔";
-
-
-        return `
+        
+            return `
 ◈━━━━━━━━━━━━━━━◈
                    🛡️ 「𝐢𝐧𝐟𝐨𝐬」🛡️
   
@@ -29,11 +27,6 @@ export const userInfo = (userData) => {
  [⚔️] ➭ *bota*: ${userData.character.inventory.equipped.armor.boot}
  [⚔️] ➭ *p. arma*: ${userData.character.inventory.equipped.weapons?.primary}
  [⚔️] ➭ *s. arma*: ${userData.character.inventory.equipped.weapons?.secondary}
- 
-◈━━━━━━━━━━━━━━━◈
-                    🩷 「𝐥𝐨𝐯𝐞」🩷
-                            
- ${spouse}
 
 ◈━━━━━━━━━━━━━━━◈`
      }catch{

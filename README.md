@@ -94,4 +94,7 @@ node dist/index
 # bugs
 caso não altere o MY_NUMBER do .env, me envie /bug para me notificar de algo ou retirar duvidas, ou apenas abra um issue.
 
+# banco de dados
+o banco de dados usado é [rpg-crud](https://github.com/Swag666baby/rpg-crud) caso queira alterar algo ou usar de forma privada.
+
 # me de uma estela 🌟

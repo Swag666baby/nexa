@@ -82,7 +82,6 @@ node dist/index
 | Realiza uma busca de imagem.  | `/imgsearch cachorro sentado ` |
 | Baixa uma música.  | `/play all girls are the same` |
 | Converte uma foto em um adesivo.  | `/sticker` |
-| Adiciona uma quantidade de experiência a um usuário.  | `/give 50 *marcando a mensagem do usuário*`|
 
 ## inteligência artificial 
 | Descrição | Exemplo | 

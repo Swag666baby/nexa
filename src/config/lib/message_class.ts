@@ -16,7 +16,7 @@ export default class Message {
         this.userName = msg?.pushName;
         this.dialed = msg.message?.extendedTextMessage?.contextInfo?.participant;
         this.dialedUserNumber = Number(msg.message?.extendedTextMessage?.contextInfo?.participant?.replace("@s.whatsapp.net", ""));
-        this.message = msg.message?.conversation || msg.message?.extendedTextMessage?.text || msg.message?.buttonsResponseMessage?.selectedDisplayText
+        this.message = msg.message?.conversation || msg.message?.extendedTextMessage?.text || msg.message?.buttonsResponseMessage?.selectedDisplayText || msg?.message?.imageMessage?.caption
         this.jid = msg?.key?.remoteJid;
         this.msg = msg;
         

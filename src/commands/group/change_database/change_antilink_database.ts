@@ -10,6 +10,6 @@ export const toggleAntilink= (groupData, jid, message) => {
         modifyGroupData(jid, groupData);
         return `*antilink ${action} com sucesso!*`;
     }else{
-      return `*o antilink ja foi ${status} anteriormente. para ver quais recursos estão habilitados ou não digite /status.*`;
+      return `*o antilink ja foi ${status} anteriormente.*`;
     }
 };

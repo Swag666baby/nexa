@@ -7,8 +7,8 @@ export const toggleNsfw= (groupData, jid, message) => {
     if(groupData?.data?.nsfw !== enable){
         groupData.data.nsfw = enable;
         modifyGroupData(jid, groupData);
-        return `*comandos rpg ${action} com sucesso!*`;
+        return `*comandos nsfw ${action} com sucesso!*`;
     }else{
-        return `*os comandos nsfw já foram ${action} anteriormente. para ver quais recursos estão habilitados ou não digite /status.*`;
+        return `*os comandos nsfw já foram ${action} anteriormente.*`;
     }
 };

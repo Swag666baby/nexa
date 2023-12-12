@@ -15,7 +15,7 @@ export const mediaCommands = async(m, sock) => {
 	if(message?.toLowerCase()?.startsWith("/imgsearch")){
 		imageSearch(message, sock, jid, msg);
 	}
-	else if(msg?.message?.imageMessage?.caption?.toLowerCase() == "/sticker"){
+	else if(message?.toLowerCase() == "/sticker"){
 		stickerMaker(message, sock, jid, msg) 
 	}
 	else if(message?.toLowerCase()?.startsWith("/tiktok ")){

@@ -9,6 +9,6 @@ export const toggleRpg = (groupData, jid, message) => {
         modifyGroupData(jid, groupData);
         return `*comandos rpg ${action} com sucesso!*`;
     }else{
-        return `*os comandos rpg já foram ${action} anteriormente. para ver quais recursos estão habilitados ou não digite /status.*`;
+        return `*os comandos rpg já foram ${action} anteriormente.*`;
     }
 };

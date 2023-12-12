@@ -26,7 +26,7 @@ export const stickerMaker =  async(message, sock, jid, msg) => {
             })
             .save("./database/media/stickers/sticker.webp");
         }catch{
-        	sock.sendMessage(jid, {text: "erro ao criar o sticker. se o erro permanecer, notifique meu desenvolvedor."}, {quoted:msg})
+        	sock.sendMessage(jid, {text: "erro ao criar o sticker. o comando deve estar na descrição da *imagem*. se o erro permanecer, notifique meu desenvolvedor."}, {quoted:msg})
         }
 }
 

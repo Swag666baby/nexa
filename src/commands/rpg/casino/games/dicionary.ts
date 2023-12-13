@@ -29,4 +29,7 @@ export const dicionaryGame = (message, userData, userNumber) => {
      else if(message?.toLowerCase() == "/dc restart"){
             return changeWord()
     }
+    else{
+        return "modo de jogo: _/dc dica_ para obter dicas sobre a palavra, _/dc restat_ para trocar a palavra, _/dc <palavra>_ para chutar a palavra."
+    }
 }

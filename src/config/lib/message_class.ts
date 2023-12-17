@@ -6,7 +6,7 @@ export default class Message {
     dialedUserNumber: number;
     message: string;
     jid: string;
-    msg: any[];
+    msg: any;
 
     constructor(m) {
         const msg = m?.messages[0];

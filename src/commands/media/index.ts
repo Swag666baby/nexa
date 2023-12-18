@@ -7,19 +7,27 @@ import {hentaiVideoSearch} from "./nsfw/hentai_video_search";
 import {imageSearch} from "./others/image_search";
 import {tiktokVideoDownloader, tiktokAudioDownloader} from "./others/tiktok_downloader";
 import {youtubeMusicDownloader} from "./others/youtube_downloader";
-import{stickerMaker} from "./others/sticker_maker";
+import {stickerMaker} from "./others/sticker_maker";
+import{instagramDownloader} from "./others/instagram_downloader";
+import {toimg} from "./others/toimg";
 
 export const mediaCommands = async(m, sock) => {
-	const {message, jid, msg} = new Message(m);
+	const {message, jid, msg, dialed} = new Message(m);
 	
 	if(message?.toLowerCase()?.startsWith("/imgsearch")){
 		imageSearch(message, sock, jid, msg);
 	}
-	else if(msg?.message?.imageMessage?.caption?.toLowerCase() == "/sticker"){
-		stickerMaker(message, sock, jid, msg) 
+	else if(message?.toLowerCase() == "/s"){
+		stickerMaker(message, sock, jid, msg, dialed)
+	}
+	else if(message?.toLowerCase() == "/toimg"){
+		toimg(message, sock, jid, msg, dialed)
 	}
 	else if(message?.toLowerCase()?.startsWith("/tiktok ")){
 		tiktokVideoDownloader(message, sock, jid, msg);
+	}
+	else if(message?.toLowerCase()?.startsWith("/insta ")){
+		instagramDownloader(message, sock, jid, msg);
 	}
 	else if(message?.toLowerCase()?.startsWith("/tiktokmp3")){
 		tiktokAudioDownloader(message, sock, jid, msg);

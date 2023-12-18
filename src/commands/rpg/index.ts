@@ -3,6 +3,7 @@ import {isAdmin} from "../../models/group/is_group_admin";
 import {data} from "../../models/user/user_data";
 import {russianRouletteGame} from "./casino/games/russian_roulette";
 import {dicionaryGame} from "./casino/games/dicionary";
+import {soupLetters} from "./casino/games/soup_letters";
 import {rouletteGame} from "./casino/games/roulette";
 import {lotteryGame} from "./casino/games/lottery"; 
 import {bingoGame} from "./casino/games/bingo";
@@ -48,6 +49,10 @@ export const rpgCommands = async(m, sock) => {
 
                     case message?.toLowerCase()?.startsWith("/dc"):
                         sock.sendMessage(jid, { text: `${dicionaryGame(message, userData, userNumber)}` }, { quoted: msg });
+                        break;
+                    
+                    case message?.toLowerCase()?.startsWith("/sopa"):
+                        sock.sendMessage(jid, { text: `${soupLetters(message, userData, userNumber)}` }, { quoted: msg });
                         break;
                     
                     case message?.toLowerCase()?.startsWith("/loteria"):
@@ -109,7 +114,7 @@ export const rpgCommands = async(m, sock) => {
                         
                     case message?.toLowerCase() == "/pescar":
                         await sock.sendMessage(jid, {text: "iniciando pescaria...🎣"}, {quoted: msg});
-                        sock.sendMessage(jid, { text: `${fisherWork(userData, userNumber)}` }, { quoted: msg });
+                        sock.sendMessage(jid, {image: {url: "database/media/images/fisher.jpg" }, mimetype: 'image/jpeg' , caption: `◈━━━━━━━━━━━━━━━◈\n                   🎣「𝐩𝐞𝐬𝐜𝐚」🎣\n\n${fisherWork(userData, userNumber)}\n\n◈━━━━━━━━━━━━━━━◈` },{quoted:msg })
                         break;
                     
                     case message?.toLowerCase() == "/vara":
@@ -121,7 +126,8 @@ export const rpgCommands = async(m, sock) => {
                         break;
                     
                     case message?.toLowerCase() == "/minerar":
-                        sock.sendMessage(jid, { text: `${minerWork(userData, userNumber)}` }, { quoted: msg });
+                        await sock.sendMessage(jid, {text: "iniciando mineração...⛏️"}, {quoted: msg});
+                        sock.sendMessage(jid, {image: {url: "database/media/images/miner.jpg" }, mimetype: 'image/jpeg' , caption: `◈━━━━━━━━━━━━━━━◈\n                   ⛏️「𝐦𝐢𝐧𝐞𝐫𝐚𝐜𝐚𝐨」⛏️\n\n${minerWork(userData, userNumber)}\n\n◈━━━━━━━━━━━━━━━◈` },{quoted:msg })
                         break;
                         
                     case message?.toLowerCase() == "/peixes":

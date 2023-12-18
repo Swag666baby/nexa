@@ -37,7 +37,8 @@ export const menu = (userName) => {
  [🎲] ➭ *${prefix}agiotar* (valor)
  [🎲] ➭ *${prefix}roletarussa* 
  [🎲] ➭ *${prefix}loteria* (n1) (n2) 
- [🎲] ➭ *${prefix}dc* dica
+ [🎲] ➭ *${prefix}dc*
+ [🎲] ➭ *${prefix}sopa*
  [🎲] ➭ *${prefix}bingo* (n1) 
  [🎲] ➭ *${prefix}slot* 
 
@@ -194,7 +195,8 @@ export const menu = (userName) => {
 ◈━━━━━━━━━━━━━━━◈
                   🎑「𝐬𝐭𝐢𝐜𝐤𝐞𝐫」🎑  
 
- [🎑] ➭ *${prefix}sticker* (foto)
+ [🎑] ➭ *${prefix}s* (foto)
+ [🎑] ➭ *${prefix}toimg* (foto)
 
 ◈━━━━━━━━━━━━━━━◈
                       🧠「𝐚𝐢」🌐

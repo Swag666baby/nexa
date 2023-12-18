@@ -30,5 +30,29 @@
       "rpg": true,
       "antilink": false
     }
+  },
+  {
+    "id": "120363206078609118@g.us",
+    "data": {
+      "nsfw": false,
+      "rpg": true,
+      "antilink": false
+    }
+  },
+  {
+    "id": "120363184661856964@g.us",
+    "data": {
+      "nsfw": false,
+      "rpg": false,
+      "antilink": false
+    }
+  },
+  {
+    "id": "120363147304257180@g.us",
+    "data": {
+      "nsfw": false,
+      "rpg": true,
+      "antilink": false
+    }
   }
 ]

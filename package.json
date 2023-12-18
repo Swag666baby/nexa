@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@sasmeee/igdl": "^1.0.0",
     "@tobyg74/tiktok-api-dl": "1.0.4",
     "@types/node": "^20.10.3",
     "@whiskeysockets/baileys": "6.4.0",

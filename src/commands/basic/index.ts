@@ -13,10 +13,10 @@ export const basicCommands = async(m, sock) => {
 	else if(message?.toLowerCase()?.startsWith("/bug")){
 		bug(sock, jid, msg, message) 
 	}
-	
 	else if(message?.toLowerCase()?.includes(".")){
 		antilink(message, sock, jid, msg, userNumber, number)
 	}
+	
 	else if(message?.startsWith("/") && !isCommand(message, "all")){
 		sock.sendMessage(jid, {text: `*comando _${message}_ não identificado ou ainda em desenvolvimento.*\n*para ver o meu menu de comandos use _/menu_*`}, {quoted:msg})
 	}

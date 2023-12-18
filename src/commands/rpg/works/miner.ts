@@ -26,7 +26,7 @@ export const minerWork = (userData, userNumber) => {
         }
         modifyUserData({"id": userNumber, "character":{ "inventory":{ "tools":{ "pickaxe":{ "durability": randomDurability}}}}}) 
         modifyUserData({"id": userNumber, "character":{ "inventory":{ "unequipped": inventory}}})
-		return `◈━━━━━━━━━━━━━━━◈\n                   ⛏️「𝐦𝐢𝐧𝐞𝐫𝐚𝐜𝐚𝐨」⛏️\n\nmineração realizada com sucesso! você obteve${myOre} e sua picareta está em ${randomDurability}%\nconsulte seus minérios no _/inventario_ e os venda no ferreiro com _/venderminerios_\n\n◈━━━━━━━━━━━━━━━◈`.replace(",", "");
+		return `mineração realizada com sucesso! você obteve${myOre} e sua picareta está em ${randomDurability}%\nconsulte seus minérios no _/inventario_ e os venda no ferreiro com _/venderminerios_`.replace(",", "");
 		    
 	}else{
 		return "*você não possui uma picareta ou a sua está quebrada! você pode comprar uma no ferreiro utilizando _/picareta_*";

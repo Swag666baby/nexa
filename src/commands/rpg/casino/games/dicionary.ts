@@ -5,11 +5,11 @@ import {changeWord} from "../../../../controllers/casino/dicionary_change_word";
 export const dicionaryGame = (message, userData, userNumber) => {
     const gameData = JSON.parse(fs.readFileSync("database/json/rpg/casino/dicionary/game.json", 'utf-8').toString())
     
-    if(message?.toLowerCase() == "/dc dica"){
+    if(message?.toLowerCase() == "/dc"){
         return `◈━━━━━━━━━━━━━━━◈\n                    📖 「𝐝𝐢𝐜𝐚」📖\n\n  [📋] ➭ *categoria*: ${gameData.categoria}\n  [✏️] ➭ *primeiras letras*: ${gameData.dica}\n  [📕] ➭ *numero de letras*: ${gameData.letras}\n  [⏱️] ➭ *chances*: ${gameData.chances}\n\n ◈━━━━━━━━━━━━━━━◈`;
     }
     
-    else if(message?.toLowerCase()?.startsWith("/dc ") && !message?.toLowerCase()?.startsWith("/dc restart") && !message?.toLowerCase()?.startsWith("/dc dica")){
+    else if(message?.toLowerCase()?.startsWith("/dc ") && !message?.toLowerCase()?.startsWith("/dc restart")){
         if(message?.toLowerCase().substr(4) == gameData.palavra?.toLowerCase()){
             const coins = userData.coins += 550
             modifyUserData({"id": userNumber, "coins": coins})
@@ -28,8 +28,5 @@ export const dicionaryGame = (message, userData, userNumber) => {
      
      else if(message?.toLowerCase() == "/dc restart"){
             return changeWord()
-    }
-    else{
-        return "modo de jogo: _/dc dica_ para obter dicas sobre a palavra, _/dc restat_ para trocar a palavra, _/dc <palavra>_ para chutar a palavra."
     }
 }

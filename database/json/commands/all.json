@@ -11,9 +11,7 @@
   "/nsfw",
   "/rpg",
   "/give",
-  "/sendxp",
   "/imgsearch",
-  "/nexaimg",
   "/play",
   "/investigar",
   "/menu",
@@ -27,7 +25,6 @@
   "/slot",
   "/loteria", 
   "/dc",
-  "/sticker",
   "/amateur",
   "/anal",
   "/anal-gape",
@@ -140,6 +137,8 @@
   "/info",
   "/registrar",
   "/userdel",
+  "/s",
+  "/toimg",
   "sara",
   "/doar",
   "/agiotar",
@@ -153,5 +152,6 @@
   "/minerar",
   "/venderminerios", 
   "/peixes",
-  "/minerios"
+  "/minerios",
+  "/sopa"
 ]

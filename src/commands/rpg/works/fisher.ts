@@ -26,7 +26,7 @@ export const fisherWork = (userData, userNumber) => {
         }
         modifyUserData({"id": userNumber, "character":{ "inventory":{ "tools":{ "fisher_rod":{ "durability": randomDurability}}}}}) 
         modifyUserData({"id": userNumber, "character":{ "inventory":{ "unequipped": inventory}}})
-		return `◈━━━━━━━━━━━━━━━◈\n                   🎣「𝐩𝐞𝐬𝐜𝐚」🎣\n\npesca realizada com sucesso! você obteve${myFish} e sua vara está em ${randomDurability}%\nconsulte seus peixes no _/inventario_ e os venda na peixaria com _/venderpeixes_\n\n◈━━━━━━━━━━━━━━━◈`.replace(",", "");
+		return `pesca realizada com sucesso! você obteve${myFish} e sua vara está em ${randomDurability}%\nconsulte seus peixes no _/inventario_ e os venda na peixaria com _/venderpeixes_`.replace(",", "");
 		    
 	}else{
 		return "*você não possui uma vara de pesca ou a sua está quebrada! você pode comprar uma na peixaria utilizando _/vara_*";

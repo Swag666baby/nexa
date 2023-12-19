@@ -58,9 +58,12 @@ node dist/index
 | Joga um jogo de roleta russa.  | `/roletarussa` |
 | Faz uma doação para outro usuário.  | `/doar 50 *marcando a mensagem do usuário*` |
 | joga nos números da loteria.  | `/loteria 1 8` |
-| Pede uma dica para o jogo.  | `/dc dica` |
+| Pede uma dica para o jogo.  | `/dc` |
 | Adivinha a possível palavra.  | `/dc banana` |
 | Altera a palavra.  | `/dc restart` |
+| Pede uma dica para o jogo.  | `/sopa` |
+| Adivinha a possível palavra.  | `/sopa banana` |
+| Altera a palavra.  | `/sopa restart` |
 | Inicia um jogo de bingo.  | `/bingo 7` |
 | Joga na máquina caça-níquel.  | `/slot` |
 | Exibe o ranking dos usuários.  | `/ranking` |
@@ -79,9 +82,11 @@ node dist/index
 |-----------|---------|
 | faz o download de um video do tiktok.  | `/tikok *url*` |
 | faz o download de um audio do tiktok.  | `/tiktokmp3 *url*` |
+| faz o download de um video do instagram | `/insta *url*` |
 | Realiza uma busca de imagem.  | `/imgsearch cachorro sentado ` |
 | Baixa uma música.  | `/play all girls are the same` |
-| Converte uma foto em um adesivo.  | `/sticker` |
+| Converte uma foto em um adesivo.  | `/s` |
+| Converte um adesivo em foto.  | `/toimg` |
 
 ## inteligência artificial 
 | Descrição | Exemplo | 

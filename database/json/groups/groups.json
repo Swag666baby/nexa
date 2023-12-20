@@ -54,5 +54,21 @@
       "rpg": true,
       "antilink": false
     }
+  },
+  {
+    "id": "13233194377@s.whatsapp.net",
+    "data": {
+      "nsfw": false,
+      "rpg": false,
+      "antilink": false
+    }
+  },
+  {
+    "id": "553488775094-1597370309@g.us",
+    "data": {
+      "nsfw": false,
+      "rpg": false,
+      "antilink": false
+    }
   }
 ]

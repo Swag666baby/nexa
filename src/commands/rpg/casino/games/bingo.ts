@@ -4,14 +4,14 @@ export const  bingoGame = (message, userData, userNumber) => {
     const randomBingo = Math.floor(Math.random() * 11);
     const bingoValue = Number(message.replace(/[^0-9]/g, ""))
     
-    if(userData.coins >= 500){
+    if(userData.coins >= 1000){
         if(bingoValue < 10 ){
             if(randomBingo == bingoValue){
-                const coins = userData.coins += 15000
+                const coins = userData.coins += 30000
                 modifyUserData({"id": userNumber, "coins": coins})
-                return `*parabéns ${userData.name}! você acertou o número do bingo e ganhou 15,000 fichas!*`;
+                return `*parabéns ${userData.name}! você acertou o número do bingo e ganhou 30,000 fichas!*`;
             }else{
-                const coins = userData.coins -= 500
+                const coins = userData.coins -= 1000
                 modifyUserData({"id": userNumber, "coins": coins})
                 return `*você perdeu! o número do bingo era 「${randomBingo}」*`;
             }

@@ -8,7 +8,8 @@ import {imageSearch} from "./others/image_search";
 import {tiktokVideoDownloader, tiktokAudioDownloader} from "./others/tiktok_downloader";
 import {youtubeMusicDownloader} from "./others/youtube_downloader";
 import {stickerMaker} from "./others/sticker_maker";
-import{instagramDownloader} from "./others/instagram_downloader";
+import {pinterestDownloader} from "./others/pinterest_downloader";
+import {instagramDownloader} from "./others/instagram_downloader";
 import {toimg} from "./others/toimg";
 
 export const mediaCommands = async(m, sock) => {
@@ -28,6 +29,9 @@ export const mediaCommands = async(m, sock) => {
 	}
 	else if(message?.toLowerCase()?.startsWith("/insta ")){
 		instagramDownloader(message, sock, jid, msg);
+	}
+	else if(message?.toLowerCase()?.startsWith("/pinterest ")){
+		pinterestDownloader(message, sock, jid, msg);
 	}
 	else if(message?.toLowerCase()?.startsWith("/tiktokmp3")){
 		tiktokAudioDownloader(message, sock, jid, msg);

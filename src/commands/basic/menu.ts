@@ -180,7 +180,9 @@ export const menu = (userName) => {
                   🔍「𝐬𝐞𝐚𝐫𝐜𝐡」🔎
 
  [🔎] ➭ *${prefix}imgsearch* (assunto)
+ [🔎] ➭ *${prefix}pinterest* (assunto) 
  [🔎] ➭ *${prefix}play* (musica) 
+ [🔎] ➭ *${prefix}insta* (url) 
  [🔎] ➭ *${prefix}tiktok* (url)
  [🔎] ➭ *${prefix}tiktokmp3* (url)
 
@@ -212,7 +214,7 @@ export const menu = (userName) => {
 ◈━━━━━━━━━━━━━━━◈
                  📌 「𝐢𝐧𝐟𝐨𝐬」📌
 
- [📌] ➭  versão: 1.0.0
+ [📌] ➭  versão: 1.3.0
  [📌] ➭  comandos: ${allCommands.length}
  [📌] ➭  github: github.com/Swag666baby
  [📌] ➭  dev: +1 (323) 435-8049

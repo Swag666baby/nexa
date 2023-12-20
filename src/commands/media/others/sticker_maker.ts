@@ -24,14 +24,14 @@ export const stickerMaker =  async(message, sock, jid, msg, dialed) => {
                    sock.sendMessage(jid, {sticker: {url: "./database/media/stickers/sticker.webp"}, mimetype: 'image/webp'},{quoted:msg })
                 })
                 .on('error', (err) => {
-                    sock.sendMessage(jid, {text: "erro ao criar o sticker. se o erro permanecer, notifique meu desenvolvedor."}, {quoted:msg})
+                    console.log(err)
                 })
                 .save("./database/media/stickers/sticker.webp");
         }else{
-            sock.sendMessage(jid, {text: "erro ao criar o sticker. marque a imagem a ser convertida."}, {quoted:msg})
+            sock.sendMessage(jid, {text: "marque a imagem a ser convertida."}, {quoted:msg})
         }
     }catch{
-        sock.sendMessage(jid, {text: "erro ao criar o sticker. o comando deve estar marcando a *imagem*. se o erro permanecer, notifique meu desenvolvedor."}, {quoted:msg})
+        sock.sendMessage(jid, {text: "erro! comando deve estar marcando a *imagem*. se o erro permanecer, notifique meu desenvolvedor."}, {quoted:msg})
     }
 }
 

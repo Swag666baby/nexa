@@ -25,6 +25,7 @@ import {sellOres} from "./stores/blacksmith/sell_ores";
 import {repairFisherRod} from "./stores/fishmonger/repair_fisher_rod";
 import {repairPickaxe} from "./stores/blacksmith/repair_pickaxe";
 import {oresTable} from "./stores/blacksmith/ores_table";
+import table from "./others/table";
 import {fishesTable} from "./stores/fishmonger/fishes_table";
 require("dotenv").config()
 
@@ -65,6 +66,10 @@ export const rpgCommands = async(m, sock) => {
 
                     case message?.toLowerCase() == "/slot":
                         sock.sendMessage(jid, { text: `${slotGame(userData, userNumber)}` }, { quoted: msg });
+                        break;
+                        
+                    case message?.toLowerCase() == "/tabela":
+                        sock.sendMessage(jid, { text: `${table}` }, { quoted: msg });
                         break;
 
                     case message?.toLowerCase()?.startsWith("/doar"):

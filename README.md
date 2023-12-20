@@ -83,6 +83,7 @@ node dist/index
 | faz o download de um video do tiktok.  | `/tikok *url*` |
 | faz o download de um audio do tiktok.  | `/tiktokmp3 *url*` |
 | faz o download de um video do instagram | `/insta *url*` |
+| faz o download de uma foto do pinterest | `/pinterest dog` |
 | Realiza uma busca de imagem.  | `/imgsearch cachorro sentado ` |
 | Baixa uma música.  | `/play all girls are the same` |
 | Converte uma foto em um adesivo.  | `/s` |

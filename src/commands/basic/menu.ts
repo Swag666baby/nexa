@@ -41,6 +41,7 @@ export const menu = (userName) => {
  [🎲] ➭ *${prefix}sopa*
  [🎲] ➭ *${prefix}bingo* (n1) 
  [🎲] ➭ *${prefix}slot* 
+ [🎲] ➭ *${prefix}tabela* 
 
 ◈━━━━━━━━━━━━━━━◈
                   🛡️「*******」⚔️ *DEV*

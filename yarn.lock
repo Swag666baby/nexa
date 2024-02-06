@@ -449,13 +449,12 @@ get-intrinsic@^1.0.2, get-intrinsic@^1.1.3, get-intrinsic@^1.2.1, get-intrinsic@
     has-symbols "^1.0.3"
     hasown "^2.0.0"
 
-google-img-scrap@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/google-img-scrap/-/google-img-scrap-1.1.1.tgz#201c361645bd8b9d7531ddb4c855ff4b93991b1b"
-  integrity sha512-1p9tpMjzDTKGNt56Nm8pprldXkNslC6mbKbmeZ7lmuIYwyiJDfYwRJpQBOndY1P7FsAPqNptutOs344C1DJWbw==
+google-img-scrap@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/google-img-scrap/-/google-img-scrap-1.1.3.tgz#0fda8d29dcb776d441ce996eed92654c797e933f"
+  integrity sha512-vjzugqe/rM2hQb/x1mZ59ReO59PZ3UTgHYw18tILKMeg4mb6S/PrdiaFvBiNwMjqzwI945OQUUcWKC5cEycz+g==
   dependencies:
     axios "^1.2.3"
-    fast-html-dom-parser "^1.0.5"
     form-data "^4.0.0"
 
 gopd@^1.0.1:

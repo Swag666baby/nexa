@@ -16,7 +16,7 @@ npm install -g typescript
 ```bash
 git clone https://github.com/Swag666baby/nexa
 cd nexa
-yarn
+npm install
 tsc
 node src/config/lib/connect.js
 node dist/index

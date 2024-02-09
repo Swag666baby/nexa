@@ -8,7 +8,7 @@ export const antilink = async(message, sock, jid, msg, userNumber, number) => {
     const hasLink = links.some(link => message?.includes(link));
     const userAdmin = await isAdmin(jid, sock, number)
     //const groupMetadata = await sock.groupMetadata(jid)
-    const groupData = await findGroups(jid 
+    const groupData = await findGroups(jid)
     
     if(hasLink && groupData?.data?.antilink && !userAdmin && userNumber != process.env.BOT_NUMBER){
         sock.groupParticipantsUpdate(jid, [number], "remove");
